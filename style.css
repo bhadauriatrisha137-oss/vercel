@@ -1,0 +1,150 @@
+:root{
+  --accent:rgb(37, 99, 235);
+  --text:rgb(17, 24, 39);
+  --muted:rgb(107, 114, 128);
+  --bg:rgb(255, 255, 255);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+img{
+  max-width:100%;
+  display:block;
+}
+ .nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+.logo {
+  width: 120px;
+  margin-left: 20px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #787373;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+nav ul li a:hover {
+  color: rgb(2, 2, 104);
+} 
+.hero {
+  max-width: 1100px;
+  margin: 120px auto 40px; 
+  padding: 20px;
+  text-align: center;
+}
+.hero h1{
+  font-size:36px;
+  margin-bottom:12px;
+}
+.hero p{
+  color:var(--muted);
+  margin-bottom:20px;
+}
+.search-bar{
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  margin-top:10px;
+}
+.search-bar input{
+  padding:10px 12px;
+  border:1px solid rgb(229, 231, 235);
+  border-radius:6px;
+  font-size:14px;
+  flex:1;
+  max-width:200px;
+}
+.search-btn{
+  background:var(--accent);
+  color:white;
+  padding:10px 16px;
+  border:none;
+  border-radius:6px;
+  font-weight:600;
+}
+.section{
+  max-width:1100px;
+  margin:40px auto;
+  padding:0 20px;
+}
+.section h2{
+  font-size:20px;
+  margin-bottom:16px;
+}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:20px;
+}
+.card{
+  border:1px solid rgb(229, 231, 235);
+  border-radius:8px;
+  overflow:hidden;
+}
+.card img{
+  height:160px;
+  width: 100%;
+  object-fit:cover;
+}
+.card-body{
+  padding:12px;
+}
+.card-body h3{
+  font-size:16px;
+  margin-bottom:6px;
+}
+.card-body p{
+  font-size:14px;
+  color:var(--muted);
+}
+footer{
+  border-top:1px solid #e5e7eb;
+  padding:20px;
+  text-align:center;
+  margin-top:40px;
+  font-size:14px;
+  color:var(--muted);
+}
+.socials{
+  margin-top:10px;
+  display:flex;
+  justify-content:center;
+  gap:12px;
+}
+.socials a{
+  color:var(--muted);
+  font-size:18px;
+}
